@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 } */
+
+.site-actions {
+	display: flex;
+	justify-content: space-between;
+	padding: 2vw 4vw;
+}
