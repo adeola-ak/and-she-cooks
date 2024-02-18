@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
+import Link from "next/link";
+
 
 export default function Home() {
 	const [selected, setSelected] = useState("sort: newest");
@@ -16,7 +18,7 @@ export default function Home() {
 		<div>
 			<Header />
 			<div className="site-actions">
-				<p>Add a Recipe</p>
+				<Link href="/add-recipe">Add a Recipe </Link>
 				<p>Featured Recipes</p>
 
 				<select

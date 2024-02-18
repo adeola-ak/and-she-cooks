@@ -1,6 +1,8 @@
 import Image from "next/image";
 import logo from "../public/logo.svg";
 
+import Link from "next/link";
+
 function Header() {
 	return (
 		<div className="header-wrapper">
@@ -9,16 +11,16 @@ function Header() {
 			<div className="header-links-container">
 				<ul className="header-links-list">
 					<li className="header-list">
-						<a href="/">All recipes</a>
+						<Link href="/">All recipes</Link>
 					</li>
 					<li className="header-list">
-						<a href="/">Kitchen</a>
+						<Link href="/">Kitchen</Link>
 					</li>
 					<li className="header-list">
-						<a href="/">Shopping Cart</a>
+						<Link href="/">Shopping Cart</Link>
 					</li>
 					<li className="header-list">
-						<a href="/">Log Out</a>
+						<Link href="/">Log Out</Link>
 					</li>
 				</ul>
 			</div>
