@@ -1,0 +1,28 @@
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 2vw 4vw;
+	background-color: aliceblue;
+	border-bottom: 2px solid black;
+}
+
+.header-links-container {
+	display: flex;
+	align-items: center;
+}
+
+.header-links-list {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-list {
+	padding-right: 10px;
+}
+
+.logo {
+	height: 10vh;
+	pointer-events: none;
+}
