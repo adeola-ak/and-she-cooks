@@ -1,12 +1,11 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logo from "../public/logo.svg";
-
 import Link from "next/link";
 
-function Header() {
+function Header({ user, signOut }) {
 	return (
 		<div className="header-wrapper">
-			<Image src={logo} width={100} height={75} alt="logo" />
+			<Image src="" width={100} height={75} alt="logo" />
 
 			<div className="header-links-container">
 				<ul className="header-links-list">
@@ -20,7 +19,15 @@ function Header() {
 						<Link href="/">Shopping Cart</Link>
 					</li>
 					<li className="header-list">
-						<Link href="/">Log Out</Link>
+						{user ? (
+							<form action={signOut}>
+								<button className="">Logout</button>
+							</form>
+						) : (
+							<Link href="/login" passHref>
+								Login
+							</Link>
+						)}
 					</li>
 				</ul>
 			</div>
