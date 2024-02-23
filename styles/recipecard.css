@@ -1,0 +1,14 @@
+.recipe-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 50px; /* adjust as needed */
+	padding: 0 100px;
+}
+
+.recipe {
+	border: 1px solid #000; /* just for visualization, remove or adjust as needed */
+	padding: 10px; /* adjust as needed */
+	height: 325px;
+	width: 275px;
+}
