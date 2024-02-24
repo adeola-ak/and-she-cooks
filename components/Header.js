@@ -5,7 +5,12 @@ import Link from "next/link";
 function Header({ user, signOut }) {
 	return (
 		<div className="header-wrapper">
-			<Image src="" width={100} height={75} alt="logo" />
+			<Image
+				src={logo}
+				width={100}
+				height={75}
+				alt="and-she-cooks-logo"
+			/>
 
 			<div className="header-links-container">
 				<ul className="header-links-list">
