@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import "@/styles/header.css";
 import "@/styles/recipecard.css";
+import "@/styles/addoptiondropdown.css";
 
 export default function RootLayout({
 	// Layouts must accept a children prop.

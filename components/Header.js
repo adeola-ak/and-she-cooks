@@ -18,7 +18,7 @@ function Header({ user, signOut }) {
 						<Link href="/">Cabinet</Link>
 					</li>
 					<li className="header-list">
-						<Link href="/">Shopping Cart</Link>
+						<Link href="/">Shopping List</Link>
 					</li>
 					<li className="header-list">
 						{user ? (
