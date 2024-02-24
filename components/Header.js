@@ -15,10 +15,7 @@ function Header({ user, signOut }) {
 			<div className="header-links-container">
 				<ul className="header-links-list">
 					<li className="header-list">
-						<Link href="/">All recipes</Link>
-					</li>
-					<li className="header-list">
-						<Link href="/">Kitchen</Link>
+						<Link href="/">Cabinet</Link>
 					</li>
 					<li className="header-list">
 						<Link href="/">Shopping Cart</Link>
