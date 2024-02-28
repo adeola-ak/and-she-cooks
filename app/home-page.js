@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
-import Link from "next/link";
 import RecipeCard from "@/components/RecipeCard";
-import AddOptionDropdown from "@/components/AddOptionDropdown";
 import Image from "next/legacy/image";
 import addIcon from "@/public/icons/plus-icon.svg";
+import Link from "next/link";
 
 export default function HomePage({ user, signOut, recipes }) {
 	const [selected, setSelected] = useState("sort: newest");
@@ -24,12 +23,13 @@ export default function HomePage({ user, signOut, recipes }) {
 		<div>
 			<Header user={user} signOut={signOut} />
 			<div className="site-actions">
-				<Image
-					src={addIcon}
-					alt="add"
-					onClick={() => setAddButtonClicked(!addButtonClicked)}
-				/>
-				{addButtonClicked && <AddOptionDropdown />}
+				<Link href="/add-recipe">
+					<Image
+						src={addIcon}
+						alt="add recipe"
+						onClick={() => setAddButtonClicked(!addButtonClicked)}
+					/>
+				</Link>
 
 				<p>Featured Recipes</p>
 				<select
