@@ -5,8 +5,9 @@ const RecipeCard = ({ recipe }) => {
 		<div className="recipe">
 			<Image
 				src={recipe.image}
-				width={100}
-				height={75}
+				priority
+				width={300}
+				height={300}
 				alt={recipe.title}
 			/>
 		</div>
