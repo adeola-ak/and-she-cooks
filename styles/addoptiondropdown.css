@@ -33,3 +33,8 @@
 .dropdown.open .dropdown-content {
 	display: block;
 }
+
+.dropdown-content p:hover {
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
