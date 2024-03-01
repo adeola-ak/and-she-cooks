@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "utils/supabase/server.js", "utils/supabase/server.js", "app/page.js", "app/home-page.js", "components/Header.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "utils/supabase/server.js", "utils/supabase/server.js", "app/page.js", "app/home-page.js", "components/Header.js", "app/add-recipe/route.js", "app/add-recipe/api/route.js"],
   "exclude": ["node_modules"]
 }
